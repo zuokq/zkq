@@ -1,0 +1,177 @@
+body{
+    background-color: #595959;
+}
+.max{
+    margin: 0 auto;
+    height: 600px;
+
+}
+/* 设置头部样式 */
+.head{
+    height: 64px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-bottom: -20px;
+    /* 设置下边框的样式 */
+    border-bottom: 5px solid #e0e0e0;
+    z-index: 100;
+    position: relative;
+}
+
+/* 设置眼睛嘴巴样式 */
+.eye,
+.eye2{
+    width: 11px;
+    height: 13px;
+    background-color: #282828;
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 27px;
+    transform: rotate(8deg);
+    /* 设置大白眼睛动 */
+    animation: run 2s ease-in-out infinite;
+}
+/* 设置右耳 */
+.eye2{
+    transform: rotate(-8deg);
+    left: 69px;
+    top: 17px;
+}
+/* 设置嘴 */
+.mouth{
+    width: 38px;
+    height: 1.5px;
+    background-color: #282828;
+    position: relative;
+    left: 34px;
+    top: 10px;
+}
+
+/* 设置躯干和腹部 */
+.torso,
+.belly{
+    margin: 0 auto;
+    height: 200px;
+    width: 180px;
+    background-color: #fff;
+    border-radius: 47%;
+    /* 设置边框 */
+    border:  5px solid #e0e0e0;
+    border-top: none;
+    z-index: 1;
+}
+.belly{
+    height: 300px;
+    width: 245px;
+    margin-top: -140px;
+    z-index: 5;
+}
+.cover{
+    width: 190px;
+    background-color: #fff;
+    height: 150px;
+    margin: 0 auto;
+    border-radius: 50%;
+    top: -20px;
+    position: relative;
+}
+
+/* 设置心脏 */
+.heart{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: relative;
+    /* 向边框四周添加阴影效果 */
+    box-shadow: 2px 5px 2px #ccc inset;
+    right: -115px;
+    top: 40px;
+    z-index: 111;
+    border: 1px solid #ccc;
+}
+
+/* 设置手和脚 */
+.left-arm,
+.right-arm{
+    height: 270px;
+    width: 120px;
+    background-color: yellow;
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    top: -350px;
+    left: -100px;
+    transform: rotate(20deg);
+    z-index: -1;
+}
+.right-arm{
+    transform: rotate(-20deg);
+    left: 100px;
+    top: -620px;
+}
+
+.l-bigfinger,
+.r-bigfinger{
+    height: 50px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: pink;
+    position: relative;
+    top: 250px;
+    left: 50px;
+    transform: rotate(-50deg);
+}
+.r-bigfinger{
+    left: 50px;
+    transform: rotate(50deg);
+}
+
+.l-smallfinger,
+.r-smallfinger{
+    height: 35px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    position: relative;
+    top: 195px;
+    left: 66px;
+    transform: rotate(-40deg);
+}
+.r-smallfinger{
+    background-color: #fff;
+    transform: rotate(40deg);
+    top: 195px;
+    left: 37px;
+}
+
+.left-leg,
+.right-leg{
+    height: 170px;
+    width: 90px;
+    background-color: blueviolet;
+    border-radius: 40% 30% 10px 45%;
+    position: relative;
+    top: -640px;
+    left: -45px;
+    transform: rotate(-1deg);
+    z-index: -2;
+    margin: 0 auto;
+}
+.right-leg{
+    background-color: blueviolet;
+    border-radius: 30% 40% 45% 10px;
+    margin: 0 auto;
+    top: -810px;
+    left: 50px;
+    transform: rotate(1deg);
+}
+
+@keyframes run {
+    40%{
+        transform: rotateX(80deg);
+    }
+    
+}
